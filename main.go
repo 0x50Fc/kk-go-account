@@ -49,6 +49,13 @@ func main() {
 
 	defer db.Close()
 
+	_, err = db.Exec("SET NAMES utf8mb4")
+
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
 	db.SetMaxIdleConns(6)
 	db.SetMaxOpenConns(200)
 
