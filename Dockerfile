@@ -8,11 +8,7 @@ COPY . github.com/hailongz/kk-go-account
 
 RUN go get -u github.com/hailongz/kk-go
 
-RUN go install github.com/hailongz/kk-go
-
 RUN go get -u github.com/hailongz/kk-go-db
-
-RUN go install github.com/hailongz/kk-go-db
 
 RUN go install github.com/hailongz/kk-go-account
 
