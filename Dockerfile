@@ -10,6 +10,8 @@ RUN go get -u github.com/hailongz/kk-go
 
 RUN go get -u github.com/hailongz/kk-go-db
 
+RUN go get -u github.com/hailongz/kk-go-task
+
 RUN go install github.com/hailongz/kk-go-account
 
 ENV KK_ADDR 127.0.0.1:87
