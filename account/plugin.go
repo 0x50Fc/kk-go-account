@@ -1,4 +1,4 @@
-package plugin
+package account
 
 import (
 	"crypto/md5"

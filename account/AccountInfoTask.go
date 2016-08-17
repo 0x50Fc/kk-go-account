@@ -1,4 +1,4 @@
-package plugin
+package account
 
 import (
 	"github.com/hailongz/kk-go-task/task"

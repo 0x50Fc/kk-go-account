@@ -1,12 +1,12 @@
-package plugin
+package account
 
 type IResultTask interface {
 	GetResult() interface{}
 }
 
 type Result struct {
-	Errno  int    `json:"errno"`
-	Errmsg string `json:"errmsg"`
+	Errno  int    `json:"errno,omitempty"`
+	Errmsg string `json:"errmsg,omitempty"`
 }
 
 /**
